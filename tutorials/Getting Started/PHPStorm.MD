@@ -10,6 +10,7 @@ Getting Magium to work with PHPStorm is pretty easy.
 4. Go to settings
 
 ![Going to settings](PHPStorm-Settings-2.png)
+
 5. Set PHPUnit to the include path (defined by the Composer setup)
 ![Setting the include path](PHPStorm-Settings-3.png)
 
