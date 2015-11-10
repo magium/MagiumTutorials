@@ -1,15 +1,15 @@
 {
-  "name": "vendor_name/package_name",
-  "description": "description_text",
+  "name": "eschrade/magiumtutorials",
+  "description": "Tutorials for the Magium Selenium testing library for Magento",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
-      "name": "author's name",
-      "email": "email@example.com"
+      "name": "Kevin Schroeder",
+      "email": "kschroeder@mirageworks.com"
     }
   ],
   "require": {
-    "eschrade/magium": "dev-master"
+    "eschrade/magium": "^0.0.1"
   }
 }
