@@ -10,6 +10,6 @@
     }
   ],
   "require": {
-    "eschrade/magium": "^0.0.1"
+    "eschrade/magium": "0.0.2"
   }
 }
