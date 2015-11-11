@@ -54,7 +54,12 @@ $this->account   = 'kschroeder';
 $this->password  = 'password';
 ```
 
-And you're done.  Now if you want to log in to the admin area during a test all you need to do is write the following code.
+And you're done.
+
+How does it look in real life?
+==============================
+
+Now if you want to log in to the admin area during a test all you need to do is write the following code.
 
 ```php
 class AdminMenuNavigatorTest extends AbstractMagentoTestCase
