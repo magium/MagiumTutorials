@@ -59,14 +59,15 @@ There are a few things to note about this code:
 With that you should have a basic test that passes.
 
 Section 2 - A test with a configured theme
+------------------------------------------
 
 This next test will do exactly the same thing as the previous test, but will do so by introducing two new concepts: configurable items and themes.
 
-A "theme" is more than just a theme.  It contains any configuration modifications unique to your setup required to handle core functionality.  For example, your mechanism to navigate to the customer login page might be different from the base rwd theme.
+A "theme" is more than just a theme.  It contains any configuration modifications unique to your setup required to handle core functionality.  For example, your mechanism to navigate to the customer login page might be different from the base `rwd` theme.
 
 However, for the time being we are going to look at the other concept; configurable items.  Themes in Magento can both extend base theme classes and have configurable properties.  We are only going to look at configuring the theme, not overriding base classes.
 
-Classes that are configurable will need their configuration stored in a /configuration directory as the base, followed by the namespace hierarchy as the directory under that followed by the filename matching the class.
+Classes that are configurable will need their configuration stored in a ``/configuration` directory as the base, followed by the namespace hierarchy as the directory under that followed by the filename matching the class.
 
 That sounds complicated, but what it boils down to is that to configure the class `Magium\Magento\Themes\Magento19\ThemeConfiguration` you would create a file called `/configuration/Magium/Magento/Themes/Magento19/ThemeConfiguration.php`.  This does not work for all classes, only classes that extend `Magium\AbstractConfigurableElement`.
 
@@ -80,7 +81,7 @@ $this->baseUrl = 'http://localhost/'; // Change to yours, obviously
 
 Why do it this way?  Because with Magium you are free to make your own decision how those values are configured.  They could be hard coded like this, you could extract them from environment variables, or you could pull it from PRNG for all I care.
 
-But how do you know what it should be?  Open `Magium\Magento\Themes\Magento19\ThemeConfiguration` ands take a look around.  Modifying themes may require some hunting around, but once they are configured you shouldn't have to think about them again.  (I'm work on a way to make this easier).
+But how do you know what it should be?  Open `Magium\Magento\Themes\Magento19\ThemeConfiguration` and take a look around.  Modifying themes may require some hunting around, but once they are configured you shouldn't have to think about them again.  (I'm working on a way to make this easier).
 
 Next up is to create a test that uses that theme class instead of hard coding the URL.
 
@@ -105,7 +106,7 @@ class ThemeTest extends AbstractMagentoTestCase
 Section 3 - Adding to cart and checking out
 -------------------------------------------
 
-This final exercise will only work with the sample 1.9 data.  It can be configured to any scenario. But for the same of simplicity you should use the standard sample data.  The purpose of this final exercise is to give you a test of the power Magium has to streamline standard operations.
+This final exercise will only work with the sample 1.9 data.  It can be configured to any scenario. But for the same of simplicity you should use the standard sample data.  The purpose of this final exercise is to give you a taste of the power Magium has to streamline standard operations.
 
 First, make sure your Magento instance is configured to use Cash On Delivery as the payment method and that guest checkout is allowed.
 
@@ -152,3 +153,5 @@ This code will
 * Assert that the order ID is not null
 
 ... in 6 lines of code
+
+If all of that looks interesting to you, browse around the tutorials and browse around the code.
