@@ -52,9 +52,9 @@ class BasicTest extends AbstractMagentoTestCase
 ```
 There are a few things to note about this code:
 
-* commandOpen() - opens a URL
-* assertElementExists() - Will check to see if the element requested with the provided selector exists
-* WebDriver::BY_XPATH - a convenience constant that tells the assertion which selector to use.  There are ID, Xpath and CSS selectors available.  Almost all convenience methods default to using the ID selector
+* `commandOpen()`` - opens a URL
+* `assertElementExists()`` - Will check to see if the element requested with the provided selector exists
+* `WebDriver::BY_XPATH` - a convenience constant that tells the assertion which selector to use.  There are ID, Xpath and CSS selectors available.  Almost all convenience methods default to using the ID selector
 
 With that you should have a basic test that passes.
 
