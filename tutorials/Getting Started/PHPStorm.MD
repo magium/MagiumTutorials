@@ -5,7 +5,7 @@ Getting Magium to work with PHPStorm is pretty easy.
 
 * Create a new project in PHPStorm
 * Init Composer
-* Add eschrade/magium as a dependency
+* Add magium/magium as a dependency (or magium/magento if you are building Magento tests)
 
 ![Adding Magium as a dependecy](PHPStorm-Settings-1.png)
 

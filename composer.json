@@ -1,5 +1,5 @@
 {
-  "name": "eschrade/magiumtutorials",
+  "name": "magium/tutorials",
   "description": "Tutorials for the Magium Selenium testing library for Magento",
   "minimum-stability": "stable",
   "license": "proprietary",
@@ -10,6 +10,6 @@
     }
   ],
   "require": {
-    "eschrade/magium": "0.0.2"
+    "magium/magento": "0.0.5"
   }
 }
