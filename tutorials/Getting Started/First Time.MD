@@ -58,7 +58,7 @@ There are a few things to note about this code:
 
 With that you should have a basic test that passes.
 
-Section 2 - A test with a configured theme
+Section 3 - A test with a configured theme
 ------------------------------------------
 
 This next test will do exactly the same thing as the previous test, but will do so by introducing two new concepts: configurable items and themes.
@@ -103,7 +103,7 @@ class ThemeTest extends AbstractMagentoTestCase
 }
 ```
 
-Section 3 - Adding to cart and checking out
+Section 4 - Adding to cart and checking out
 -------------------------------------------
 
 This final exercise will only work with the sample 1.9 data.  It can be configured to any scenario. But for the same of simplicity you should use the standard sample data.  The purpose of this final exercise is to give you a taste of the power Magium has to streamline standard operations.
