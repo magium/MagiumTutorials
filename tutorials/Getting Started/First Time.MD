@@ -27,9 +27,9 @@ Section 1 - Getting things set up
 Section 2 - A basic test to make sure everything is working
 -----------------------------------------------------------
 
-All test classes need to extend Magium\AbstractTestClass, which itself extends PHPUnit_Framework_TestCase.  This base class contains some basic bootstrapping, such as configuring WebDriver, along with helper methods for commonly use functionality.
+All test classes need to extend `Magium\AbstractTestClass`, which itself extends `PHPUnit_Framework_TestCase`.  This base class contains some basic bootstrapping, such as configuring `WebDriver`, along with helper methods for commonly use functionality.
 
-Typically a Magium sub-project will have its own abstract test case to define the software's unique characteristics.  For Magento that class is Magium\Magento\AbstractMagentoTestCase.
+Typically a Magium sub-project will have its own abstract test case to define the software's unique characteristics.  For Magento that class is `Magium\Magento\AbstractMagentoTestCase`.
 
 Create a new test class with the following code, replacing the hostname, of course.
 
