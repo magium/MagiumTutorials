@@ -55,7 +55,7 @@ However, there are times when the default filter will not be sufficient.  For ex
 
 Configurable swatches can have images for their layered navigation filters which means that standard text selectors will not work.  For that reason there is a filter called `Magium\Magento\Extractors\Catalog\LayeredNavigation\FilterTypes\SwatchFilter`.
 
-> This brings up an interesting question: "how do you choose which filter to use?"  The answer is that you don't.  Each filter has a method called `filterApplies()` which the layered navigation extractor calls to see if the filter class applies to a given filter.
+> This brings up an interesting question: "how do you choose which filter to use?"  The answer is that you don't.  Each filter has a method called `filterApplies()` which the layered navigation extractor calls to see if the filter class applies to a given filter.  All you need to do is request the (case-insensitive) name of the filter.
 
 So if you are using CE 1.9, and using configurable swatches you can use code like the following to satisfy the previous user story.
 
