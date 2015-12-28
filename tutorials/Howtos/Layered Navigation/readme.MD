@@ -1,7 +1,7 @@
 Getting Started With Layered Navigation
 =======================================
 
-Layered Navigation might be one of the harder components to work with.  A big part of the problem is that different themes use different CSS styles are used.  Normally that isn't much of a problem but because there is interaction between the navigation filters and the Layered Navigation extractor CSS case sensitivity may be a problem.  The text in the HTML may be "abc" but because of CSS `getText()` will require "ABC".  But the Xpath selector requires "abc".  You could normalize the values but there's no guarantee that the normalization will be followed by the designers.  For that reason the pertinent HTML is extracted from HTML document and Xpath'ed without CSS using `\DOMDocument` and `\DOMXPath`.
+Layered Navigation might be one of the harder components to work with.  A big part of the problem is that different themes use different CSS styles are used.  Normally that isn't much of a problem but because there is interaction between the navigation filters and the Layered Navigation extractor CSS case sensitivity may be a problem.  The text in the HTML may be "abc" but because of CSS `getText()` will return "ABC".  But the Xpath selector requires "abc".  You could normalize the values but there's no guarantee that the normalization will be followed by the designers.  For that reason the pertinent HTML is extracted from HTML document and Xpath'ed without CSS using `\DOMDocument` and `\DOMXPath`.
 
  **If you are a non-developer, or you are not concerned about modifying Layered Navigation extractor classes then you could have ignored that paragraph**
 
@@ -45,7 +45,7 @@ class MaleShopperBrowseCasualShirtsTest extends \Magium\Magento\AbstractMagentoT
     }
 }
 ```
-[(source)](../../howto/Layered Navigation/MaleShopperBrowseCasualShirtsTest.php)
+[(source)](../../../howto/Layered Navigation/MaleShopperBrowseCasualShirtsTest.php)
 
 Most layered navigation components can be handled using the default filter, creatively called `Magium\Magento\Extractors\Catalog\LayeredNavigation\FilterTypes\DefaultFilter`.  All filters will extend `Magium\Magento\Extractors\Catalog\LayeredNavigation\FilterTypes\AbstractFilterType`.
 
@@ -81,7 +81,7 @@ class ShopperWantsToFindIndigoJewelry extends \Magium\Magento\AbstractMagentoTes
     }
 }
 ```
-[(source)](../../howto/Layered Navigation/ShopperWantsToFindIndigoJewelryTest.php)
+[(source)](../../../howto/Layered Navigation/ShopperWantsToFindIndigoJewelryTest.php)
 
 Prices are another thing that have some additional functionality that you might want to use.  Consider the following user story:
 
@@ -110,7 +110,7 @@ class ShopperWantsToFindBootsOver400 extends \Magium\Magento\AbstractMagentoTest
     }
 }
 ```
-[(source)](../../howto/Layered Navigation/ShopperWantsToFindIndigoJewelryTest.php)
+[(source)](../../../howto/Layered Navigation/ShopperWantsToFindIndigoJewelryTest.php)
 
 Now, obviously simply knowing that the filter exists may not be enough.  You might want to click on a link as part of the story to, maybe, add a product to the shopping cart.  This functionality is built into each value object.  Each value object contains a `WebDriverElement` object for the `a` tag that it links to.  So to click on that link we just need to append some code to the end of the previous test.
 
@@ -136,4 +136,4 @@ class ShopperWantsToFindBootsOver400WithClick extends \Magium\Magento\AbstractMa
     }
 }
 ```
-[(source)](../../howto/Layered Navigation/ShopperWantsToFindBootsOver400WithClick.php)
+[(source)](../../../howto/Layered Navigation/ShopperWantsToFindBootsOver400WithClick.php)
