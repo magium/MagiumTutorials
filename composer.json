@@ -10,6 +10,6 @@
     }
   ],
   "require": {
-    "magium/magento": "0.0.11"
+    "magium/magento": "0.0.12"
   }
 }
