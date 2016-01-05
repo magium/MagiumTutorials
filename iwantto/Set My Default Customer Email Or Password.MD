@@ -1,4 +1,4 @@
-
+# I  Want To Set My Default Customer Email Or Password
 
 
 The customer identity class contains all of the information needed to successfully process a checkout action, not including the payment or shipping methods.
@@ -7,7 +7,7 @@ Say you are based out of Florida and you want most of your purchases to come fro
 
 `Magium\Magento\Identities\Customer` extends `Magium\AbstractConfigurableElement` which means that it will look in the base directory's /configuration folder to find a file that contains alternate information.
 
- The pattern is `/configuration/Namespace/ChildNamespace\Class.php`.  So for the class `Magium\Magento\Identities\Customer` the name of the file will be `/configuration/Magium\Magento\Identities\Customer.php`.
+ The pattern is `/configuration/Namespace/ChildNamespace/Class.php`.  So for the class `Magium\Magento\Identities\Customer` the name of the file will be `/configuration/Magium\Magento/Identities/Customer.php`.
 
  That file is `include()`ed during object instantialization.  That a few things.
 
@@ -21,4 +21,7 @@ Say you are based out of Florida and you want most of your purchases to come fro
  /* @var $this \Magium\Magento\Identities\Customer */
 
  $this->billingRegionId = 'Florida';
+
+ $this->emailAddress = 'myactualemail@example.com';
+ $this->password = 'myactualpassword';
  ```
