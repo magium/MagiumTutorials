@@ -1,24 +1,6 @@
-# I Want To Validate Or Verify That A Customer Can See That An Order Has Shipped
-
-This is a complicated activity to do since it requires
-
-* Add to cart
-* Checkout
-* Admin Login
-* Admin navigation to the order
-* Shipping the order
-* Logging in as the customer
-* Navigating to the order
-* Extracting the order information.
-* Asserting the order has been shipped
-
-It's complicated, but it is also probably not too much of a stretch to say that is a legitimate user story.
-
-Let's see how it looks in code:
-
-```
 <?php
 
+namespace Examples\Action\Admin\Order;
 
 use Magium\Magento\AbstractMagentoTestCase;
 use Magium\Magento\Actions\Admin\Login\Login;
@@ -58,6 +40,3 @@ class ShipAnOrderTest extends AbstractMagentoTestCase
     }
 
 }
-```
-[(source)](../examples/Actions/Admin/Order/ShipAnOrderTest.php)
-Given the complexity of the story, that's not that bad.

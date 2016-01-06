@@ -1,9 +1,6 @@
-# I Want To Validate Or Verify That The Address I Used During Checkout Is On The Order
-
-To validate that an order has properly take the correct address you will need to know a combination of the customer identity, the billing address step, and the order summary extractor (not to mention the whole place-order workflow).
-
-```
 <?php
+
+namespace Examples\Actions\Checkout;
 
 use Magium\Magento\AbstractMagentoTestCase;
 use Magium\Magento\Actions\Cart\AddItemToCart;
@@ -22,19 +19,12 @@ class UseDifferentCustomerAddressDuringCheckoutTest extends AbstractMagentoTestC
         $this->commandOpen($this->getTheme()->getBaseUrl());
         $identity = $this->getIdentity();
         /* @var $identity \Magium\Magento\Identities\Customer */
-
-        // Set the new street value
         $identity->setBillingAddress('098 my st');
 
         $this->getAction(AddItemToCart::ACTION)->addSimpleProductToCartFromCategoryPage();
         $this->setPaymentMethod('CashOnDelivery');
         $billingAddress = $this->getAction(CustomerBillingAddress::ACTION);
         /* @var $billingAddress CustomerBillingAddress */
-
-        /*
-         * Because we are logging in as a registered customer we may need to
-         * tell Magium that we don't want to use a saved address during checkout
-         */
         $billingAddress->enterNewAddress();
         $this->getAction(CustomerCheckout::ACTION)->execute();
 
@@ -49,4 +39,3 @@ class UseDifferentCustomerAddressDuringCheckoutTest extends AbstractMagentoTestC
     }
 
 }
-```

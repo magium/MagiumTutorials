@@ -1,8 +1,3 @@
-# I Want To Validate Or Verify That A Payment Method Is Available In Checkout
-
-This scenario is not too difficult to do, but it will require building a separate class to do the assertion.
-
-```
 <?php
 
 namespace Examples\Actions\Checkout;
@@ -66,4 +61,3 @@ class ValidateMyPaymentMethod implements StepInterface
     }
 
 }
-```

@@ -81,7 +81,7 @@ To see what that looks like consider this:
      public function getCategorySpecificProductPageXpath($productName)
     {
         $xpath = sprintf($this->categorySpecificProductPageXpath, $productName);
-        return $this->translate($xpath);
+        return $this->translatePlaceholders($xpath);
     }
 ```
 
