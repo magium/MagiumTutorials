@@ -130,9 +130,9 @@ That's a lot to take in.  Let's break it down into components.
 
 In this example we created a new theme class to contain the selectors needed for the action to succeed.  There were three selectors
 
-1) Email address element ID
-2) Subscribe button Xpath
-3) Subscription succeeded Xpath
+1. Email address element ID
+2. Subscribe button Xpath
+3. Subscription succeeded Xpath
 
 "Wait a sec!" you might be saying.  "Didn't you say that we shouldn't use IDs in themes?"  Yes, for core functionality.  If it is for your own website use the most specific selector possible and you cannot get any more specific than an XML ID.  If you were to contribute this code to the core you would be asked to change that to the Xpath `//input[@id="newsletter"]` so someone else could change it without having to change the action code.
 
@@ -144,13 +144,13 @@ But also, two of the three items do need processing.  Because there is text invo
 
 The action is fairly straightforward.
 
-1) Validate that the elements it needs are displayed on the screen
-2) Enter the email address
-3) Click "Subscribe"
-4) Ensure that the subscription succeeded
+1. Validate that the elements it needs are displayed on the screen
+2. Enter the email address
+3. Click "Subscribe"
+4. Ensure that the subscription succeeded
     * There may be times when you want to validate that a subscription fails.  There are two ways of doing this
-        1) Inject an assertion into the action
-        2) Call `setExpectedException('PHPUnit_Framework_ExpectationFailedException')` in the test case, though this may allow other failed assertions to give a false positive
+        1. Inject an assertion into the action
+        2. Call `setExpectedException('PHPUnit_Framework_ExpectationFailedException')` in the test case, though this may allow other failed assertions to give a false positive
 
 It has a start and finish defined by its purpose: "subscribe to the newsletter".
 
