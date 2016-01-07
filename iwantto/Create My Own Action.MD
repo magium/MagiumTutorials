@@ -142,7 +142,7 @@ In this example we created a new theme class to contain the selectors needed for
 2. Subscribe button Xpath
 3. Subscription succeeded Xpath
 
-"Wait a sec!" you might be saying.  "Didn't you say that we shouldn't use IDs in themes?"  Yes, for core functionality.  If it is for your own website use the most specific selector possible and you cannot get any more specific than an XML ID.  If you were to contribute this code to the core you would be asked to change that to the Xpath `//input[@id="newsletter"]` so someone else could change it without having to change the action code.
+"Wait a sec!" you might be saying.  "Didn't you say that we shouldn't use IDs in themes?"  Yes, for core functionality.  Use the most specific selector possible for your own website.  You cannot get any more specific than an XML ID.  But if you were to contribute this code to the core you would be asked to change that to the Xpath `//input[@id="newsletter"]` so someone else could change it without having to change the action code.
 
 All configuration data is retrieved via getters.  That is because the theme might need to do some processing.  It is better to standardize on an approach and so we are standardizing on getters because it allows you to retrieve data that requires processing in the same way for data that does not.  Consistency, in other words.
 
