@@ -4,8 +4,8 @@ There might be some cases where you might want to create a one-off customer.  Pe
 
  To do that there are two items we need to utilize:
 
- 1) The Customer Identity
- 2) The Registration Action.
+ 1. The Customer Identity
+ 2. The Registration Action.
 
  ```
  <?php

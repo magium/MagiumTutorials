@@ -10,8 +10,8 @@ A setting modifier is based off of `Magium\Magento\Actions\Admin\Configuration\S
 
 A setting modifier has two ways the setting can be specified.
 
-1) via its ID (every element in the System Configuration has an ID (this is actually really nice))
-2) via its label.
+1. via its ID (every element in the System Configuration has an ID (this is actually really nice))
+2. via its label.
 
 The syntax for a setting modifier is "Tab/Section::setting".  The setting can be either the ID (default) or a label (by prepending the setting with the text label=).
 

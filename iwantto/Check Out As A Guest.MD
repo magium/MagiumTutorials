@@ -4,8 +4,8 @@ The guest checkout is going to likely be the most typical means of checking out.
 
 The guest checkout is built into MagiumMagento and should work out of the box with almost all checkout scenarios provided
 
-1) you are using the Magento OPC Checkout
-2) you have not significantly changed the checkout - most look-and-feel changes should not affect the checkout
+1. you are using the Magento OPC Checkout
+2. you have not significantly changed the checkout - most look-and-feel changes should not affect the checkout
 
 To execute the checkout process you will need to call `execute()` on the guest checkout object.  Here is a quick example (sans adding a product to the cart).
 

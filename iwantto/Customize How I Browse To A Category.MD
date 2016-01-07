@@ -19,20 +19,20 @@ If you have significantly changed the HTML for the category navigation you may n
 
 There are two components you will need to configure to make this work
 
-1) Base Xpath
-2) Recursive Child Xpath
+1. Base Xpath
+2. Recursive Child Xpath
 
 Both are required to make this work.  Say you have nodes that are 3 levels deep, the Xpath activity will look like this
 
-1) Move To //baseXpath/descendant::child-level0
-2) Move To //baseXpath/descendant::child-level1
-3) Move To //baseXpath/descendant::child-level2
-4) Click At Current Mouse Location
+1. Move To //baseXpath/descendant::child-level0
+2. Move To //baseXpath/descendant::child-level1
+3. Move To //baseXpath/descendant::child-level2
+4. Click At Current Mouse Location
 
 The two properties are
 
-1) navigationBaseXPathSelector - The base Xpath selector
-2) navigationChildXPathSelector - the level-aware child Xpath selector
+1. navigationBaseXPathSelector - The base Xpath selector
+2. navigationChildXPathSelector - the level-aware child Xpath selector
 
 Let's look at the declaration for the child node getter in the abstract theme configuration class with the selector Xpath.
 

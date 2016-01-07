@@ -6,9 +6,9 @@ The translation adapter needs to be set up prior to executing any tests.  More a
 
 There are three things you need to know about when working with translations
 
-1) The translation adapter
-2) The translation files with their corresponding locale (configuration, in other words)
-3) Themes
+1. The translation adapter
+2. The translation files with their corresponding locale (configuration, in other words)
+3. Themes
 
 ## The Translation Adapter
 
@@ -70,7 +70,10 @@ The translation adapter will support any translation file that the Zend Framewor
 "My Account","Mein Benutzerkonto"
  ```
 
- Configuring the adapter requires 1) the absolutely path to the translation file, and 2) the locale that the translation file is referring to.
+ Configuring the adapter requires
+
+ 1. the absolutely path to the translation file, and
+ 2. the locale that the translation file is referring to.
 
  ```
  use Magium\AbstractTestCase;

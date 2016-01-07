@@ -11,8 +11,8 @@ Say you are based out of Florida and you want most of your purchases to come fro
 
  That file is `include()`ed during object instantialization.  That a few things.
 
- 1) It is part of the class definition itself.  This then follows that
- 2) It can contain PHP code
+ 1. It is part of the class definition itself.  This then follows that
+ 2. It can contain PHP code
 
  ```
  <?php

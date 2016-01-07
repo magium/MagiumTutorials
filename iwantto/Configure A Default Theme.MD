@@ -43,7 +43,7 @@ Providing the information is the responsibility of one of the extending classes,
 
 But the theme configuration classes do not contain all of the Xpaths needed for the test actions to use.  The primary theme class also needs to provide a Customer theme class and a One Page Checkout theme class.  This data is separated to
 
-1) Keep the main theme class under some level of control for size
+1. Keep the main theme class under some level of control for size
 
 Well, really, that's it.
 

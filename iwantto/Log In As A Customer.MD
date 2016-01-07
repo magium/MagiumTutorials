@@ -2,9 +2,9 @@
 
 This requires 2-3 components
 
-1) The Identity to log in as
-2) A Navigator that navigates to the login screen
-3) An Action that does the logging in
+1. The Identity to log in as
+2. A Navigator that navigates to the login screen
+3. An Action that does the logging in
 
 *Why 2-3?  Because there is a `NavigateAndLogin` navigator available*
 

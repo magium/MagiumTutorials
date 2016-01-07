@@ -6,10 +6,10 @@ If you have a public facing test site then you can very easily use something lik
 
 As part of our own CI build there are four items to know
 
-1) Checkout out your source from source control
-2) Set (optional) environment variables, such as setting the base URL
-3) Run composer update
-4) Run PHPUnit
+1. Checkout out your source from source control
+2. Set (optional) environment variables, such as setting the base URL
+3. Run composer update
+4. Run PHPUnit
 
 This is our setup right noe
 
