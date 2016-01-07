@@ -10,10 +10,11 @@ Why is the Single Responsibility principle important?  Because it allows you to 
 
 There are 2-4 items that you will probably require, at a minimum.
 
-1) The WebDriver (to do stuff)
-2) (a really good idea) The Theme (to get configuration)
-3) (optionally) The current test case (for assertions)
-4) Assertions to ensure that the action worked ()Often all you need to do is allow a selector to fail to cause the test to fail.  WebDriver throws an exception if the element cannot be found)
+1. The WebDriver (to do stuff)
+2. (a really good idea) The Theme (to get configuration)
+3. (optionally) The current test case (for assertions)
+4. Assertions to ensure that the action worked
+     * Often all you need to do is allow a selector to fail to cause the test to fail.  WebDriver throws an exception if the element cannot be found.
 
 An action should always be retrieved through `AbstractTestCase::getAction()` that is a convenience method that automatically goes through the dependency injection container and satisifies the dependencies for the object you are trying to create.  In other words you never ask for ab object (like `Mage::getModel()`) you declare what you might need and the DIC will provide it for you.
 
