@@ -4,7 +4,15 @@ An action is used when you want to do something.  "You mean like browse to a cat
 
 There is no required class to extend to build an action.  There may be a single action, multiple actions, or setters that need to be called.  As a general matter of practice they should have an `execute()` method defined, but this is not required.
 
-Actions should follow the SOLID principles (Single Responsibility, Open/Closed Principle, Lyskov Substitution, Interface Segregation, Dependency Inversion).  The most important of these is the Single Responsibility principle.
+Actions should follow the SOLID principles
+
+* Single Responsibility
+* Open/Closed Principle
+* Lyskov Substitution
+* Interface Segregation
+* Dependency Inversion
+
+The most important of these is the Single Responsibility and Dependency Inversion principles.
 
 Why is the Single Responsibility principle important?  Because it allows you to re-use that functionality in other places and reduces the scope of breakability.
 
