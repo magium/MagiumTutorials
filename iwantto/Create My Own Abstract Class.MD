@@ -5,7 +5,7 @@ This is not a requirement.  However you will probably find that after a while li
 
  Create a `lib` folder and call it `MyAbstractTestCase` or whatever you want.  Create a setUp() method, making sure to call `parent::setUp()`.  Then set any customizations *after* the call to `parent::setUp()`.
 
- ```
+```
 
  namespace MyTests;
 
@@ -21,11 +21,11 @@ This is not a requirement.  However you will probably find that after a while li
  }
 
 
- ```
+```
 
  Now when you write a test you will extend this new abstract class instead of `AbstractMagentoTestCase`.
 
- ```
+```
 
  namespace MyTests;
 
@@ -39,4 +39,4 @@ This is not a requirement.  However you will probably find that after a while li
 
  }
 
- ```
+```
