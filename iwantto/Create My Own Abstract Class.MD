@@ -1,5 +1,5 @@
 
-## Create Your Own Abstract Class
+## Create My Own Abstract Class
 
 This is not a requirement.  However you will probably find that after a while little customizations that you make start to add up and it starts getting repetitive.  If things start getting repetitive your productivity will drop.  It's easy to create your own *so just do it*.
 
